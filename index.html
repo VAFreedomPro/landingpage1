@@ -32,9 +32,9 @@
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .button {
@@ -78,30 +78,29 @@
             font-size: 6px;
         }
 		
-		.form-container {
-            margin: 20px auto;
-            max-width: 100%; /* Allow form to scale with viewport */
-            height: auto; /* Allow form to adjust to content height */
-        }
+	.form-container {
+      margin: 20px auto;
+      max-width: 80%; /* Allow form to scale with viewport */
+    }
 
-        .form-container iframe {
-            display: block; /* Ensures iframe fills the container width */
-            border: none; /* Remove iframe border */
-        }
+    .form-container iframe {
+      display: 150px;
+      border: none; /* Remove iframe border */
+    }
 
+    /* New section for centering ebook and bundle boxes */
+    .rental-items {
+      display: flex;
+      justify-content: center; /* Center items horizontally */
+      margin-bottom: 20px; /* Add some spacing after the boxes */
+    }
+
+    .rental-item {
+      /* Existing styles for individual boxes */
+    }
+	 /* Media Queries for Responsive Design */
         @media screen and (max-width: 768px) { 
             /* Adjust styles for smaller screens (e.g., tablets) */
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        @media screen and (max-width: 480px) { 
-            /* Adjust styles for smaller screens (e.g., phones) */
             h1 {
                 font-size: 1.8rem;
             }
@@ -109,52 +108,20 @@
             p {
                 font-size: 0.9rem;
             }
+        }
 
-            .container {
-                padding: 20px; 
+        @media screen and (max-width: 480px) { 
+            /* Adjust styles for smaller screens (e.g., phones) */
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.8rem;
             }
         }
-		
 
-.shop-items {
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  grid-gap: 20px; /* Adjust gap as needed */
-  justify-content: center; /* Center items horizontally */
-  margin: 20px auto;
-}
-
-.shop-item {
-  border: 1px solid black;
-  padding: 15px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.shop-item h3 {
-  margin-bottom: 10px;
-}
-
-.shop-item img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  /* Adjust for smaller screens (tablets) */
-  .shop-item {
-    width: calc(50% - 20px); /* Adjust width for two items per row */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* Adjust for smaller screens (phones) */
-  .shop-item {
-    width: 100%; /* Make items full width on small screens */
-  }
-}
-    </style>
+  </style>
 </head>
 <body>
   <div class="container">
@@ -173,30 +140,38 @@
 					<a href="https://www.facebook.com/vafreedompro/" target="_blank">
                         <img src="facebook.png" alt="Facebook Logo" style="width: 50px; height: 50px; margin: 5px;">
                     </a>
- 
-  <h2>V.A. Freedom Pro - Products & Services</h2>
-  <div class="shop-item">
-      <h3>The E-book</h3>
-      <p>Learn the secrets to building a profitable VA business from anywhere in the world.</p>
-      <p class="product-price">$30.00 USD</p>
-      <a href="https://square.link/u/BafANR3T" class="button">Buy Now</a> 
-    </div>
-    <div class="shop-item">
-      <h3>E-book Bundle Deal</h3>
-      <p>Get the E-book + Bonus Materials at a discounted price!</p>
-      <p class="product-price">$47.00 USD</p>
-      <a href="https://square.link/u/faxz7cqV" class="button">Buy Now</a> 
-    </div>
-    <div class="shop-item">
-      <h2>Coaching Program</h2>
-      <p class="coming-soon">Coming Soon!</p>
-      <div class="coaching-form">
-        <p>Oops! You're here early. No worries, just submit your info below to be notified when the Coaching Program goes live! Spots will fill up fast, and you don't want to miss out. Each coaching package lasts for 4 weeks, and spots are LIMITED! Don't wait!!! Join the list NOW to secure YOUR SPOT!</p>
-         <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff6UenQKbxFjwhi8Djy2XCpF_vY39JJu26ykXI_ATljELsLw/viewform?embedded=true" width="640" height="757" frameborder="0.25" marginheight="0" marginwidth="0">Loading…</iframe>
-			</div>
-      </div>
-      <p class="disclaimer">By submitting your email, you agree to receive all future emails from V.A. Freedom Pro. WE DO NOT SELL INFORMATION. Coaching Program spots are limited per sessions, and are not guaranteed until full payment has been received. We do not guarantee any financial success, as that solely depends on the individual's ability to create their own business and work for their own success. <a href="[Your Terms & Conditions Link]">See Terms & Conditions</a></p>
+ <section>
+        <h2>Resources: </h2>
+        <div class="rental-items">
+            <div class="rental-item">
+				<h3>The E-book</h3>
+				  <p>Learn the secrets to building a profitable VA business from anywhere in the world.</p>
+				  <p class="product-price">$30.00 USD</p>
+				  <a href="https://square.link/u/BafANR3T" class="button">Buy Now</a> 
+				</div>
+            <div class="rental-item">
+				<h3>E-book Bundle Deal</h3>
+				  <p>Get the E-book + Bonus Materials at a discounted price!</p>
+				  <p class="product-price">$47.00 USD</p>
+				  <a href="https://square.link/u/faxz7cqV" class="button">Buy Now</a> 
+				</div>
+	</section>
+<section>
+               <div class="shop-item">
+				  <h2>Coaching Program</h2>
+				  <p class="coming-soon">Coming Soon!</p>
+				  <div class="coaching-form">
+					<p>Oops! You're here early. No worries, just submit your info below to be notified when the Coaching Program goes live! Spots will fill up fast, and you don't want to miss out. Each coaching package lasts for 4 weeks, and spots are LIMITED! Don't wait!!! Join the list NOW to secure YOUR SPOT!</p>
+					 <div class="form-container">
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff6UenQKbxFjwhi8Djy2XCpF_vY39JJu26ykXI_ATljELsLw/viewform?embedded=true" width="640" height="757" frameborder="0.25" marginheight="0" marginwidth="0">Loading…</iframe>
+						</div>
+				  </div>
+            </div>
+          
+    </section>
+     
+    <div>
+      <p class="disclaimer">By submitting your email, you agree to receive all future emails from V.A. Freedom Pro. WE DO NOT SELL INFORMATION. Coaching Program spots are limited per sessions, and are not guaranteed until full payment has been received. We do not guarantee any financial success, as that solely depends on the individual's ability to create their own business and work for their own success. <a href="index.html">See Terms & Conditions</a></p>
     </div>
   </div>
 </body>
