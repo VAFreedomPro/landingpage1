@@ -1,0 +1,482 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Make menu items inline */
+}
+
+nav ul li a {
+    display: inline-block; /* Makes links behave like buttons */
+    background-color: #333; /* Background color for buttons */
+    color: white; /* Default text color */
+    padding: 10px 15px; /* Padding for button appearance */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a.active {
+    color: black; /* Active page text color */
+    background-color: #fff; /* Active page background color */
+}
+
+nav ul li a:hover {
+    background-color: blue; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+
+section {
+    padding: 20px;
+}
+
+.rental-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rental-item {
+    border: 1px solid black;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.rental-item h3 {
+    margin-bottom: 10px;
+}
+
+.rental-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+	border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: blue;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Previous styles remain the same */
+
+section#cart {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-summary {
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#submit-rental {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+	border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+#submit-rental:hover {
+    background-color: blue;
+}
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex; /* Change to flex to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out logo and menu */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+.logo-image {
+    height: 50px; /* Set height for logo */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.rental-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rental-item {
+    border: 1px solid black;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.rental-item h3 {
+    margin-bottom: 10px;
+}
+
+.rental-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+	border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: blue;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Previous styles remain the same */
+
+section#cart {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-summary {
+    margin-bottom: 20px;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+#submit-rental {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-rental:hover {
+    background-color: blue;
+}
+
+.shop-button-container {
+    text-align: center; /* Center the button container */
+    margin-top: 20px; /* Space above the button */
+}
+
+.shop-button {
+    display: inline-block; /* Make it behave like a button */
+    background-color: #333; /* Match header background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.shop-button:hover {
+    background-color: blue; /* Change color on hover */
+}
+
+nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the menu items */
+}
+
+nav ul {
+    display: flex; /* Ensure the list items are displayed in a row */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin-right: 10px; /* Space between buttons */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack the menu items vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove right margin when stacked */
+        margin-bottom: 10px; /* Space between buttons in vertical layout */
+    }
+}
+
+#contact {
+    border: 2px solid blue; /* Blue outline border */
+    padding: 20px;
+    margin: 20px 0; /* Add some space above and below */
+}
+
+.form-row {
+    display: flex; /* Use flexbox for row layout */
+    flex-direction: column; /* Stack items in a column */
+    margin-bottom: 15px; /* Space between rows */
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.rental-terms {
+    color: red;
+    font-weight: bold; /* Optional: makes the text bold */
+    margin: 20px 0; /* Optional: adds some space around the text */
+}
+
+/* Cart Table Styles */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th,
+#cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#cart-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Summary Section Styles */
+#cart-summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    display: none; /* Initially hidden */
+}
+
+#summary-body {
+    width: 100%;
+}
+
+#summary-body tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Input Styles */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.shop-items {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  grid-gap: 20px; /* Adjust gap as needed */
+  justify-content: center; /* Center items horizontally */
+  margin: 20px auto;
+}
+
+.shop-item {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.shop-item h3 {
+  margin-bottom: 10px;
+}
+
+.shop-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
