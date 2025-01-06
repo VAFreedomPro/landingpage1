@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V.A. Freedom Pro - Products & Services</title>
+  <style>
+    /* Your CSS styles here */
+  </style>
+</head>
+<body>
+  <h1>V.A. Freedom Pro - Products & Services</h1>
+  <div class="product-container">
+    <div class="product-card">
+      <h2>The E-book</h2>
+      <p>Learn the secrets to building a profitable VA business from anywhere in the world.</p>
+      <p class="product-price">$ [Your E-book Price]</p>
+      <a href="[Your E-book Purchase Link]" class="button">Buy Now</a> 
+    </div>
+    <div class="product-card">
+      <h2>E-book Bundle Deal</h2>
+      <p>Get the E-book + Bonus Materials at a discounted price!</p>
+      <p class="product-price">$ [Your Bundle Price]</p>
+      <a href="[Your Bundle Purchase Link]" class="button">Buy Now</a> 
+    </div>
+    <div class="product-card">
+      <h2>Coaching Program</h2>
+      <p class="coming-soon">Coming Soon!</p>
+      <div class="coaching-form">
+        <p>Oops! You're here early. No worries, just submit your info below to be notified when the Coaching Program goes live! Spots will fill up fast, and you don't want to miss out. Each coaching package lasts for 4 weeks, and spots are LIMITED! Don't wait!!! Join the list NOW to secure YOUR SPOT!</p>
+        <form>
+          <input type="email" placeholder="Enter your email address">
+          <button type="submit">Join First Access List</button>
+        </form>
+      </div>
+      <p class="disclaimer">By submitting your email, you agree to receive all future emails from V.A. Freedom Pro. WE DO NOT SELL INFORMATION. Coaching Program spots are limited per sessions, and are not guaranteed until full payment has been received. We do not guarantee any financial success, as that solely depends on the individual's ability to create their own business and work for their own success. <a href="[Your Terms & Conditions Link]">See Terms & Conditions</a></p>
+    </div>
+  </div>
+</body>
+</html>
