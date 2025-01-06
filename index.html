@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
     <title>V.A. Freedom Pro</title>
+	<link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: sans-serif;
@@ -12,7 +13,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #000000;
         }
 
         .container {
@@ -50,32 +51,102 @@
         .button:hover {
             background-color: #0062cc;
         }
+		
+		.cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 20px 0;
+            background-color: #3e1c42;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #3e1c42;
+		}
+		
+		.disclaimer {
+			display: inline-block;
+            padding: 12px 20px;
+            margin: 20px 0;
+            color: #020102;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 6px;
+        }
+		
+		.form-container {
+            margin: 20px auto;
+            max-width: 100%; /* Allow form to scale with viewport */
+            height: auto; /* Allow form to adjust to content height */
+        }
+
+        .form-container iframe {
+            display: block; /* Ensures iframe fills the container width */
+            border: none; /* Remove iframe border */
+        }
+
+        @media screen and (max-width: 768px) { 
+            /* Adjust styles for smaller screens (e.g., tablets) */
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) { 
+            /* Adjust styles for smaller screens (e.g., phones) */
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 20px; 
+            }
+        }
+   
     </style>
 </head>
 <body>
   <div class="container">
     <h1>Break free from the 9-to-5 grind and build a flexible career from ANYWHERE.</h1>
     <p>Join the #VAFreedomPro journey today!</p>
-    <img src="your_logo_image.png" alt="V.A. Freedom Pro Logo"> 
+    <img src="logo-vafreedompro-2025.png" alt="V.A. Freedom Pro Logo" style="width: 200px; height: 200px; margin: 5px;"> 
     <p>Follow us on social media:</p>
-    <ul>
-      <li><a href="https://www.facebook.com/your_facebook_page"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://www.instagram.com/your_instagram_page"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://www.tiktok.com/@your_tiktok_page"><i class="fab fa-tiktok"></i></a></li>
-    </ul>
+	 <a href="mailto:info@vafreedompro.com" class="contact-button">Email Us</a>
+                <div class="social-media">
+                    <a href="https://www.tiktok.com/@vafreedompro" target="_blank">
+                        <img src="tiktok.png" alt="TikTok Logo" style="width: 50px; height: 50px; margin: 5px;">
+                    </a>
+                    <a href="https://www.instagram.com/vafreedompro/" target="_blank">
+                        <img src="instagram.png" alt="Instagram Logo" style="width: 50px; height: 50px; margin: 5px;">
+                    </a>
+					<a href="https://www.facebook.com/vafreedompro/" target="_blank">
+                        <img src="facebook.png" alt="Facebook Logo" style="width: 50px; height: 50px; margin: 5px;">
+                    </a>
  
-  <h1>V.A. Freedom Pro - Products & Services</h1>
+  <h2>V.A. Freedom Pro - Products & Services</h2>
   <div class="product-container">
     <div class="product-card">
-      <h2>The E-book</h2>
+      <h3>The E-book</h3>
       <p>Learn the secrets to building a profitable VA business from anywhere in the world.</p>
-      <p class="product-price">$ [Your E-book Price]</p>
+      <p class="product-price">$30.00 USD</p>
       <a href="[Your E-book Purchase Link]" class="button">Buy Now</a> 
     </div>
     <div class="product-card">
-      <h2>E-book Bundle Deal</h2>
+      <h3>E-book Bundle Deal</h3>
       <p>Get the E-book + Bonus Materials at a discounted price!</p>
-      <p class="product-price">$ [Your Bundle Price]</p>
+      <p class="product-price">$47.00 USD</p>
       <a href="[Your Bundle Purchase Link]" class="button">Buy Now</a> 
     </div>
     <div class="product-card">
@@ -83,10 +154,9 @@
       <p class="coming-soon">Coming Soon!</p>
       <div class="coaching-form">
         <p>Oops! You're here early. No worries, just submit your info below to be notified when the Coaching Program goes live! Spots will fill up fast, and you don't want to miss out. Each coaching package lasts for 4 weeks, and spots are LIMITED! Don't wait!!! Join the list NOW to secure YOUR SPOT!</p>
-        <form>
-          <input type="email" placeholder="Enter your email address">
-          <button type="submit">Join First Access List</button>
-        </form>
+         <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff6UenQKbxFjwhi8Djy2XCpF_vY39JJu26ykXI_ATljELsLw/viewform?embedded=true" width="640" height="757" frameborder="0.25" marginheight="0" marginwidth="0">Loading…</iframe>
+			</div>
       </div>
       <p class="disclaimer">By submitting your email, you agree to receive all future emails from V.A. Freedom Pro. WE DO NOT SELL INFORMATION. Coaching Program spots are limited per sessions, and are not guaranteed until full payment has been received. We do not guarantee any financial success, as that solely depends on the individual's ability to create their own business and work for their own success. <a href="[Your Terms & Conditions Link]">See Terms & Conditions</a></p>
     </div>
